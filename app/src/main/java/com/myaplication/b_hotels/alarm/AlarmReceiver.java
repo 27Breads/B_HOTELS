@@ -37,8 +37,8 @@ public class AlarmReceiver extends BroadcastReceiver {
         NotificationCompat.Builder builder = new NotificationCompat.Builder
                 (context, PRIMARY_CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_notif_alarm)
-                .setContentTitle("Alarm Batik Breads")
-                .setContentText("Aplikasi Batik Breads ^_^")
+                .setContentTitle("Alarm B_HOTELS")
+                .setContentText("Aplikasi B_HOTELS ^_^")
                 .setContentIntent(contentPendingIntent)
                 .setContentIntent(contentPendingIntent)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
