@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.myaplication.b_hotels">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,15 +12,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreenActivity"></activity>
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".MainActivity">
+        <receiver
+            android:name="com.myaplication.b_hotels.alarm.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+        </receiver>
+
+        <activity
+            android:name="com.myaplication.b_hotels.alarm.AlarmActivity"
+            android:label="Alarm B_HOTELS"
+            android:theme="@style/AppTheme"
+            android:parentActivityName="com.myaplication.b_hotels.MainActivity"/>
+
+        <activity
+            android:name="com.myaplication.b_hotels.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.myaplication.b_hotels.ListHotelActivity"/>
+        <activity
+            android:name="com.myaplication.b_hotels.ListHotelActivity"
+            android:label="Daftar Hotel"
+            android:parentActivityName="com.myaplication.b_hotels.MainActivity" />
+        <activity
+            android:name="com.myaplication.b_hotels.AboutActivity"
+            android:label="Profile Developer"
+            android:parentActivityName="com.myaplication.b_hotels.MainActivity" />
+        <activity android:name="com.myaplication.b_hotels.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.myaplication.b_hotels.MainActivity" />
     </application>
 
 </manifest>

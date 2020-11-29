@@ -1,11 +1,7 @@
 <resources>
-    <<<<<<< Updated upstream
-    <string name="app_name">Breads-Daftar-Batik</string>
-    =======
-    <string name="app_name">B_HOTEL</string>
-    >>>>>>> Stashed changes
+    <string name="app_name">B_HOTELS</string>
     <string name="developer">Developer</string>
-    <string name="nama">Nama :</string>
+    <string name="nama">Nama:</string>
     <string name="ahmad_irfandi">Ahmad Irfandi</string>
     <string name="jurusan">Jurusan :</string>
     <string name="sistem_informasi">Sistem Informasi</string>

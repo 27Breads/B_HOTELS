@@ -14,7 +14,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.myaplication.b_hotels.model.Hotel;.model.Hotel;
+import com.myaplication.b_hotels.model.Hotel;
 
 import java.util.ArrayList;
 
