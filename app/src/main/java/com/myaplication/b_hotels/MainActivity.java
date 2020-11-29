@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.google.android.material.card.MaterialCardView;
+import com.myaplication.b_hotels.alarm.AlarmActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,27 @@ public class MainActivity extends AppCompatActivity {
         initView();
 
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
+
+        mPengetahuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), ListHotelActivity.class));
+            }
+        });
+
+        mProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AboutActivity.class));
+            }
+        });
+
+        mAlarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AlarmActivity.class));
+            }
+        });
 
     }
 
